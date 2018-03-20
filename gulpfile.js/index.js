@@ -4,6 +4,7 @@ global.$ = require("gulp-load-plugins")();
 $.gulp = require("gulp");
 $.config = require("./config");
 $.taskList = require("./taskList");
+$.libList = require("./libList");
 
 $.taskList.forEach(taskSeria => {
     taskSeria.forEach(task =>
@@ -11,6 +12,7 @@ $.taskList.forEach(taskSeria => {
     );
 });
 
-$.gulp.task("default", $.gulp.series(
-    $.taskList.map(taskGroup => $.gulp.parallel(taskGroup))
-));
+$.gulp.task(
+    "default",
+    $.gulp.series($.taskList.map(taskGroup => $.gulp.parallel(taskGroup)))
+);

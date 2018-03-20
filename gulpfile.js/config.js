@@ -16,15 +16,13 @@ module.exports = {
     },
     dist: {
         dir: "dist",
-        scripts: "main.min.js",
-        styles: "style.min.js",
-        libs: {
-            scripts: "libs.min.js",
-            styles: "libs.min.css"
-        },
+        scripts: "scripts",
+        styles: "styles",
+        lib: ".lib",
+        map: ".map",
         assets: {
             dir: "/assets",
-            img: "/images"
+            img: "/img/"
         }
     }
 };
