@@ -3,7 +3,7 @@ const dist = $.config.dist;
 
 module.exports = function() {
     return $.gulp
-        .src(source.dir + source.styles)
+        .src(source.dir + source.styles.path)
         .pipe($.if($.prod, $.sourcemaps.init()))
         .pipe(
             $.sassVars({
@@ -16,6 +16,7 @@ module.exports = function() {
                 outputStyle: $.prod ? "compressed" : "expanded"
             })
         )
+        .pipe($.autoprefixer(source.styles.autoprefixer))
         .pipe($.rename(dist.styles + ($.prod ? dist.min + ".css" : ".css")))
         .pipe($.if($.prod, $.sourcemaps.write("./")))
         .pipe($.gulp.dest(dist.dir));

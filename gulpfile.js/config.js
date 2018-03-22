@@ -4,16 +4,22 @@ module.exports = {
         pages: "/pages",
         pug: { dir: "/pug", mixins: "/mixins", includes: "/includes" },
         scripts: { dir: "/scripts", order: ["/main.js", "/**/*.js"] },
-        styles: "/styles/main.scss",
+        styles: {
+            path: "/styles/main.scss",
+            autoprefixer: [
+                "last 15 version",
+                "> 1%",
+                "ie 9",
+                "ie 10",
+                "ie 11",
+                "Opera 12.1"
+            ]
+        },
         assets: {
             dir: "/assets",
             img: "/img/",
             fonts: "/fonts/"
         }
-    },
-    libs: {
-        scripts: [],
-        styles: []
     },
     dist: {
         dir: "dist",

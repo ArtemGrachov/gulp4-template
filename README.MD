@@ -1,6 +1,7 @@
 # Gulp 4 Template
 ## ToDo:
 * inline SVG
+* dev mode
 ## Done:
 * PUG -> HTML
 * SCSS -> CSS
