@@ -2,10 +2,11 @@ module.exports = {
     source: {
         dir: "src",
         pages: "/pages",
-        pug: { dir: "/pug", mixins: "/mixins", includes: "/includes" },
-        scripts: { dir: "/scripts", order: ["/main.js", "/**/*.js"] },
+        pug: { dir: "/pug/", mixins: "/mixins/", includes: "/includes/" },
+        scripts: { dir: "/scripts/", order: ["main.js", "**/*.js"] },
         styles: {
-            path: "/styles/main.scss",
+            dir: "/styles/",
+            root: "main.scss",
             autoprefixer: [
                 "last 15 version",
                 "> 1%",

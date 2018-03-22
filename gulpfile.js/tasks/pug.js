@@ -7,6 +7,7 @@ module.exports = function() {
             $.pug({
                 basedir: __dirname,
                 locals: {
+                    pug: source.pug,
                     styles: dist.styles + ($.prod ? ".min.css" : ".css"),
                     scripts: dist.scripts + ($.prod ? ".min.js" : ".js"),
                     cssLibs: $.libList.cssLibs.length
