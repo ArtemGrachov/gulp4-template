@@ -1,2 +1,5 @@
-console.log("test 111");
-console.log("test 2");
+function testFnc(arg) {
+    return arg;
+}
+
+console.log(testFnc(5));

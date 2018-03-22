@@ -1,13 +1,21 @@
 # Gulp 4 Template
 
 ## NPM commands
-```npm run build```
-Gulp builds project
-```npm run dev```
-development mode (Gulp starts browser-sync server and watch for changes in source folder)
-```npm run prod```
-production mode (minifying .css and .js files)
-```npm run dev-min```
+```
+npm run build
+```
+build project
+```
+npm run dev
+```
+development mode (Browser-Sync + autoreload on change)
+```
+npm run prod
+```
+production mode (minifying .js, .css)
+```
+npm run dev-min
+```
 development mode with minifying .js and .css files
 
 ## Template configuration
@@ -27,12 +35,45 @@ Template structure based on default configuration
     * assets
         * fonts
         * img
-    * pages - project pages in .pug format
+    * pug
+        * mixins - directory for Pug mixins
+        * pages
+            * index.pug
+            * (some-page #1).pug
+            * (some-page #2).pug
+            * ...
+        * parts - directory for includes
+            * common - common layout parts (header, sidebar, footer etc.)
+            * (some-page #1)
+            * (some-page #2)
+            * ...
+        * templates
+            * page.pug - template with HTML5 layout, scripts and styles tags
+            * common.pug - template for content layout
     * scripts
+        * main.js
+        * (some-script #1).js
+        * (some-script #2).js
+        * ...
     * styles - .scss style sheets with icons.css for SVG sprites
+        * pages
+            * (some-page #1).scss
+            * (some-page #2).scss
+            * ...
+        * parts
+        * _misc.scss - SCSS mixins, function etc.
+        * fonts.scss
+        * icons.scss (for SVG sprites)
+        * main.scss - root SCSS file
+        * style.scss
+        * tags.scss
     * svg-sprites
+        * (some-icon #1).svg
+        * (some-icon #2).svg
+        * ...
 * gulpfile.js
     * tasks
+        * ...
     * config.js - configuration file
     * index.js - main file
     * libList.js - list of CSS and JS libs
@@ -45,6 +86,8 @@ Template structure based on default configuration
     * normalize.css
 * Fonts:
     * Oswald
+* Gulp templates (used in template development):
+    * [denka07's Gulp 4 Template](https://github.com/denka07/gulp4-template)
 
 ## ToDo:
 * error notification
