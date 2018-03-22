@@ -2,8 +2,8 @@ module.exports = {
     source: {
         dir: "src/",
         pages: "pages",
-        pug: { dir: "/pug/", mixins: "/mixins/", includes: "/includes/" },
-        scripts: { dir: "/scripts/", order: ["main.js", "**/*.js"] },
+        pug: { dir: "pug/", mixins: "mixins/", includes: "includes/" },
+        scripts: { dir: "scripts/", order: ["main.js", "**/*.js"] },
         styles: {
             dir: "styles/",
             root: "main.scss",
@@ -18,7 +18,7 @@ module.exports = {
         },
         svgSprite: {
             dir: "svg-sprites/",
-            output: "/styles/",
+            output: "styles/",
             filename: "icons",
             prefix: "icon-"
         },
@@ -31,11 +31,11 @@ module.exports = {
     dist: {
         dir: "dist/",
         min: ".min",
-        lib: ".lib",
+        libs: "libs",
         scripts: "main",
         styles: "style",
         assets: {
-            dir: "",
+            dir: "assets/",
             img: "img/",
             fonts: "fonts/"
         }

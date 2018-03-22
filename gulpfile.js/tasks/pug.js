@@ -11,10 +11,10 @@ module.exports = function() {
                     styles: dist.styles + ($.prod ? ".min.css" : ".css"),
                     scripts: dist.scripts + ($.prod ? ".min.js" : ".js"),
                     cssLibs: $.libList.cssLibs.length
-                        ? dist.styles + dist.lib + ".css"
+                        ? dist.libs + ($.prod ? ".min.css" : ".css")
                         : null,
                     jsLibs: $.libList.jsLibs.length
-                        ? dist.scripts + dist.lib + ".js"
+                        ? dist.libs + ($.prod ? ".min.js" : ".js")
                         : null,
                     imgUrl: dist.assets.dir + dist.assets.img
                 }

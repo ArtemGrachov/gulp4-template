@@ -1,4 +1,4 @@
 module.exports = {
-    jsLibs: [],
-    cssLibs: []
+    jsLibs: ["jquery/dist/jquery.min.js"],
+    cssLibs: ["normalize.css/normalize.css"]
 }
