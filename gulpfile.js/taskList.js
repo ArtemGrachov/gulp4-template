@@ -1,1 +1,5 @@
-module.exports = [["clean"], ["pug", "scripts", "styles", "images", "fonts"]];
+module.exports = [
+    ["clean"],
+    ["svg-sprite"],
+    ["pug", "scripts", "styles", "images", "fonts"]
+];

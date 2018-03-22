@@ -1,7 +1,7 @@
 # Gulp 4 Template
 ## ToDo:
-* inline SVG
 * image cache
+* libs
 ## Done:
 * PUG -> HTML
 * SCSS -> CSS
@@ -12,6 +12,7 @@
 * production mode
 * fonts task
 * dev mode
+* inline SVG
 ## Cancelled
 * TS -> JS
 * import script into script

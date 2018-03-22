@@ -1,3 +1,14 @@
+.icon {
+    font-size: 1em;
+    background-size: 1em;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1em;
+    width: 1em;
+    display: inline-block;
+}
+@import "icons";
+
 $green: green;
 body {
     color: $green;

@@ -1,11 +1,11 @@
 module.exports = {
     source: {
-        dir: "src",
-        pages: "/pages",
+        dir: "src/",
+        pages: "pages",
         pug: { dir: "/pug/", mixins: "/mixins/", includes: "/includes/" },
         scripts: { dir: "/scripts/", order: ["main.js", "**/*.js"] },
         styles: {
-            dir: "/styles/",
+            dir: "styles/",
             root: "main.scss",
             autoprefixer: [
                 "last 15 version",
@@ -16,22 +16,28 @@ module.exports = {
                 "Opera 12.1"
             ]
         },
+        svgSprite: {
+            dir: "svg-sprites/",
+            output: "/styles/",
+            filename: "icons",
+            prefix: "icon-"
+        },
         assets: {
-            dir: "/assets",
-            img: "/img/",
-            fonts: "/fonts/"
+            dir: "assets/",
+            img: "img/",
+            fonts: "fonts/"
         }
     },
     dist: {
-        dir: "dist",
+        dir: "dist/",
         min: ".min",
         lib: ".lib",
         scripts: "main",
         styles: "style",
         assets: {
             dir: "",
-            img: "/img/",
-            fonts: "/fonts/"
+            img: "img/",
+            fonts: "fonts/"
         }
     }
 };

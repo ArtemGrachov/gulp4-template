@@ -8,7 +8,8 @@ module.exports = function() {
         .pipe(
             $.sassVars({
                 imgUrl: dist.assets.dir + dist.assets.img,
-                fontsUrl: dist.assets.dir + dist.assets.fonts
+                fontsUrl: dist.assets.dir + dist.assets.fonts,
+                icons: source.svgSprite.filename
             })
         )
         .pipe(
