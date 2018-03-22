@@ -1,44 +1,17 @@
-.icon {
-    font-size: 1em;
-    background-size: 1em;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 1em;
-    width: 1em;
-    display: inline-block;
-}
-@import "icons";
-@import "sth";
+$font-size: 16px; // variable for @rem function (see _misc.scss);
+$transition: 200ms;
+// Basic stylesheets
+@import "./_misc.scss";
+@import "./fonts.scss";
+@import "./icons"; // necessary for svg sprites
+@import "./tags.scss";
+@import "./style.scss";
 
-$green: green;
-body {
-    color: $green;
-}
+// Page parts
+@import './parts/header.scss';
+@import './parts/nav.scss';
+@import './parts/sidebar.scss';
+@import './parts/footer.scss';
 
-@font-face {
-    font-family: "Oswald";
-    src: url($fontsUrl+"Oswald-Regular.ttf");
-}
-
-h1 {
-    font-family: "Oswald";
-    color: red;
-}
-
-h2 {
-    font-family: "Oswald";
-    color: orangered;
-}
-
-h3 {
-    font-family: "Oswald";
-    color: orange;
-}
-
-.test-src {
-    background-image: url($imgUrl+"testimg.jpg");
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-    display: flex;
-}
+// Site pages styles
+@import "./pages/other.scss";

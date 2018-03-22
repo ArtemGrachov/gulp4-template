@@ -1,0 +1,8 @@
+extends ./page.pug
+block page
+    include ../parts/common/header.pug
+    .container.main-container
+        include ../parts/common/sidebar.pug
+        main.content
+            block content
+    include ../parts/common/footer.pug

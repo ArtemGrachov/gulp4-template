@@ -3,9 +3,12 @@ class Zzz {
     constructor(c) {
         this.a = "a";
         this.b = "b";
-        thic.c = c;
+        this.c = c;
     }
     someMethod() {
         return 123445;
     }
 }
+
+const obj1 = new Zzz(1);
+const obj2 = new Zzz(2);

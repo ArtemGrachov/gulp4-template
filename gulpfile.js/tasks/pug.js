@@ -2,7 +2,7 @@ const source = $.config.source;
 const dist = $.config.dist;
 module.exports = function() {
     return $.gulp
-        .src(source.dir + source.pages + "/**/*.pug")
+        .src(source.dir + source.pug.dir + source.pug.pages + "**/*.pug")
         .pipe(
             $.pug({
                 basedir: __dirname,

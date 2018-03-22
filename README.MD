@@ -1,13 +1,13 @@
 # Gulp 4 Template
 
 ## NPM commands
-`npm run build`
+```npm run build```
 Gulp builds project
-`npm run dev`
+```npm run dev```
 development mode (Gulp starts browser-sync server and watch for changes in source folder)
-`npm run prod`
+```npm run prod```
 production mode (minifying .css and .js files)
-`npm run dev-min`
+```npm run dev-min```
 development mode with minifying .js and .css files
 
 ## Template configuration
@@ -47,8 +47,8 @@ Template structure based on default configuration
     * Oswald
 
 ## ToDo:
+* error notification
 * image cache
-* TS -> JS
 * .js, .html, .css import in webpack-style way
 ## Done:
 * PUG -> HTML
@@ -62,5 +62,7 @@ Template structure based on default configuration
 * dev mode
 * SVG sprites
 * libs
+* pug and scss templates, includes mixins .etc for quick start
 ## Cancelled
 * environments
+* TS -> JS

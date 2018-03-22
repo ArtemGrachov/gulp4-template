@@ -1,8 +1,7 @@
 module.exports = {
     source: {
         dir: "src/",
-        pages: "pages",
-        pug: { dir: "pug/", mixins: "mixins/", includes: "includes/" },
+        pug: { dir: "pug/", pages: 'pages/' },
         scripts: { dir: "scripts/", order: ["main.js", "**/*.js"] },
         styles: {
             dir: "styles/",

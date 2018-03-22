@@ -1,0 +1,20 @@
+.nav {
+    border-top: 1px dotted lightgrey;
+    &-list {
+        @extend %list;
+        > li {
+            display: inline-block;
+            a {
+                padding: 10px 45px;
+                display: block;
+                font-family: "Oswald";
+                color: grey;
+                text-decoration: none;
+                &:hover {
+                    background: red;
+                    color: white;
+                }
+            }
+        }
+    }
+}
