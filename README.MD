@@ -1,15 +1,16 @@
 # Gulp 4 Template
 ## ToDo:
-* ES6 -> JS
-* TS -> JS
-* .js, .css minification
 * inline SVG
-* production mode
 ## Done:
 * PUG -> HTML
 * SCSS -> CSS
 * image minification
 * encapsulating .js
+* .js, .css minification
+* ES6 -> JS
+* production mode
+* fonts task
 ## Cancelled
+* TS -> JS
 * import script into script
 * environments

@@ -1,1 +1,1 @@
-module.exports = [["cleaning"], ["pug", "scripts", "style", "images"]];
+module.exports = [["cleaning"], ["pug", "scripts", "styles", "images", "fonts"]];

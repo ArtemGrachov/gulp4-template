@@ -2,3 +2,20 @@ $green: green;
 body {
     color: $green;
 }
+
+@font-face {
+    font-family: "Oswald";
+    src: url($fontsUrl+"Oswald-Regular.ttf");
+}
+
+h1 {
+    font-family: "Oswald";
+}
+
+.test-src {
+    background-image: url($imgUrl+"testimg.jpg");
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    display: flex;
+}

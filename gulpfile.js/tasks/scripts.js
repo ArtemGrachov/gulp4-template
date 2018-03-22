@@ -9,7 +9,7 @@ module.exports = function() {
             )
         )
         .pipe($.if($.prod, $.sourcemaps.init()))
-        .pipe($.concat(dist.scripts + ($.prod ? ".min.js" : ".js")))
+        .pipe($.concat(dist.scripts + ($.prod ? dist.min + ".js" : ".js")))
         .pipe(
             $.babel({
                 presets: ["env"]
@@ -17,10 +17,13 @@ module.exports = function() {
         )
         .pipe($.if($.prod, $.uglify()))
         .pipe(
-            $.wrapper({
-                header: "(function() {",
-                footer: "})();"
-            })
+            $.if(
+                $.prod,
+                $.wrapper({
+                    header: "(function() {",
+                    footer: "})();"
+                })
+            )
         )
         .pipe($.if($.prod, $.sourcemaps.write("./")))
         .pipe($.gulp.dest(dist.dir));

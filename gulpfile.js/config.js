@@ -4,10 +4,11 @@ module.exports = {
         pages: "/pages",
         pug: { dir: "/pug", mixins: "/mixins", includes: "/includes" },
         scripts: { dir: "/scripts", order: ["/main.js", "/**/*.js"] },
-        style: "/styles/main.scss",
+        styles: "/styles/main.scss",
         assets: {
             dir: "/assets",
-            images: "/img/"
+            img: "/img/",
+            fonts: "/fonts/"
         }
     },
     libs: {
@@ -16,12 +17,14 @@ module.exports = {
     },
     dist: {
         dir: "dist",
+        min: ".min",
+        lib: ".lib",
         scripts: "main",
         styles: "style",
-        lib: ".lib",
         assets: {
-            dir: "/assets",
-            img: "/img/"
+            dir: "",
+            img: "/img/",
+            fonts: "/fonts/"
         }
     }
 };
