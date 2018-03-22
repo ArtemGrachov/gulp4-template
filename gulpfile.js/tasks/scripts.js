@@ -8,17 +8,20 @@ module.exports = function() {
                 script => source.dir + source.scripts.dir + script
             )
         )
-        .pipe($.concat(dist.scripts + ".js"))
+        .pipe($.if($.prod, $.sourcemaps.init()))
+        .pipe($.concat(dist.scripts + ($.prod ? ".min.js" : ".js")))
         .pipe(
             $.babel({
                 presets: ["env"]
             })
         )
+        .pipe($.if($.prod, $.uglify()))
         .pipe(
             $.wrapper({
                 header: "(function() {",
                 footer: "})();"
             })
         )
+        .pipe($.if($.prod, $.sourcemaps.write("./")))
         .pipe($.gulp.dest(dist.dir));
 };

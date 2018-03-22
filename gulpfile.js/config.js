@@ -16,10 +16,9 @@ module.exports = {
     },
     dist: {
         dir: "dist",
-        scripts: "scripts",
-        styles: "styles",
+        scripts: "main",
+        styles: "style",
         lib: ".lib",
-        map: ".map",
         assets: {
             dir: "/assets",
             img: "/img/"
