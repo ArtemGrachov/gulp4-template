@@ -1,13 +1,21 @@
 # Gulp 4 Template
 
 ## NPM commands
-```npm run build```
-Gulp builds project
-```npm run dev```
-development mode (Gulp starts browser-sync server and watch for changes in source folder)
-```npm run prod```
-production mode (minifying .css and .js files)
-```npm run dev-min```
+```
+npm run build
+```
+build project
+```
+npm run dev
+```
+development mode (Browser-Sync + autoreload on change)
+```
+npm run prod
+```
+production mode (minifying .js, .css)
+```
+npm run dev-min
+```
 development mode with minifying .js and .css files
 
 ## Template configuration
@@ -27,7 +35,17 @@ Template structure based on default configuration
     * assets
         * fonts
         * img
-    * pages - project pages in .pug format
+    * pug
+        * mixins - directory for Pug mixins
+        * pages
+        * parts - directory for includes
+            * common - common layout parts (header, sidebar, footer etc.)
+            * (pagename #1)
+            * (pagename #2)
+            * ...
+        * templates
+            * page.pug - template with HTML5 layout, scripts and styles tags
+            * common.pug - template for content layout
     * scripts
     * styles - .scss style sheets with icons.css for SVG sprites
     * svg-sprites
