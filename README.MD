@@ -3,13 +3,13 @@
 * ES6 -> JS
 * TS -> JS
 * .js, .css minification
-* encapsulating .js
 * inline SVG
-* environments
+* production mode
 ## Done:
 * PUG -> HTML
 * SCSS -> CSS
 * image minification
-
-##Cancelled
+* encapsulating .js
+## Cancelled
 * import script into script
+* environments
