@@ -38,14 +38,10 @@ Template structure based on default configuration
     * pug
         * mixins - directory for Pug mixins
         * pages
-            * index.pug
-            * (some-page #1).pug
-            * (some-page #2).pug
-            * ...
         * parts - directory for includes
             * common - common layout parts (header, sidebar, footer etc.)
-            * (some-page #1)
-            * (some-page #2)
+            * (pagename #1)
+            * (pagename #2)
             * ...
         * templates
             * page.pug - template with HTML5 layout, scripts and styles tags
